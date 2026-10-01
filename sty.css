@@ -1,0 +1,689 @@
+```css
+/* =========================================================
+   NYINGCHUO REX WEBSITE
+   Modern Responsive Website Stylesheet
+   ========================================================= */
+
+/* ---------- Google Font ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ---------- Global Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f9fc;
+    color: #222;
+    line-height: 1.7;
+}
+
+
+/* ---------- Reusable Container ---------- */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+
+header {
+    background: #0b1f3a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    min-height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background: #d4a017;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   HERO / HOME SECTION
+   ========================================================= */
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(11, 31, 58, 0.88),
+            rgba(11, 31, 58, 0.88)
+        ),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72")
+        center / cover;
+}
+
+.hero-content {
+    max-width: 800px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: clamp(40px, 7vw, 72px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #d4a017;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #e8edf5;
+    margin-bottom: 30px;
+}
+
+
+/* ---------- Buttons ---------- */
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: #d4a017;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #b8860b;
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(212, 160, 23, 0.3);
+}
+
+
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+.about-section {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 80px auto;
+    padding: 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- Profile Picture ---------- */
+
+.profile-image {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 320px;
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid #d4a017;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.18);
+
+    transition: transform 0.4s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ---------- About Content ---------- */
+
+.about-content {
+    flex: 1;
+}
+
+.small-title {
+    color: #d4a017 !important;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.about-content h1 {
+    font-size: 42px;
+
+    color: #0b1f3a;
+
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+.about-content h1 span {
+    color: #d4a017;
+}
+
+.about-content h2 {
+    color: #555;
+    font-size: 21px;
+
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+/* ---------- Personal Information ---------- */
+
+.personal-info {
+    background: #f7f9fc;
+
+    padding: 20px;
+
+    margin: 25px 0;
+
+    border-left: 4px solid #d4a017;
+
+    border-radius: 0 10px 10px 0;
+}
+
+.personal-info p {
+    margin: 7px 0;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+   ========================================================= */
+
+section {
+    padding: 70px 20px;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #0b1f3a;
+}
+
+.section-title span {
+    color: #d4a017;
+}
+
+.section-title p {
+    color: #777;
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   RECIPE PAGE
+   ========================================================= */
+
+.recipe {
+    width: 90%;
+    max-width: 850px;
+
+    margin: 70px auto;
+
+    padding: 45px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+.recipe h1 {
+    color: #0b1f3a;
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.recipe h2 {
+    color: #d4a017;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.recipe p {
+    color: #555;
+}
+
+.recipe ul,
+.recipe ol {
+    padding-left: 25px;
+}
+
+.recipe li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+
+/* =========================================================
+   MENU PAGE
+   ========================================================= */
+
+.menu-section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 70px auto;
+}
+
+.menu-section h1 {
+    text-align: center;
+
+    font-size: 42px;
+
+    color: #0b1f3a;
+
+    margin-bottom: 10px;
+}
+
+.menu-section > p {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 45px;
+}
+
+.menu-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+}
+
+
+/* ---------- Food Card ---------- */
+
+.food-card {
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.15);
+}
+
+.food-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+}
+
+.food-card:hover img {
+    transform: scale(1.05);
+}
+
+.food-card h3 {
+    color: #0b1f3a;
+
+    font-size: 20px;
+
+    padding: 18px 20px 5px;
+}
+
+.food-card .price {
+    color: #d4a017;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    padding: 0 20px 20px;
+}
+
+
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+.contact-section {
+    width: 90%;
+    max-width: 800px;
+
+    margin: 70px auto;
+}
+
+.contact-section h1 {
+    text-align: center;
+
+    color: #0b1f3a;
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.contact-section > p {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 35px;
+}
+
+form {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #0b1f3a;
+
+    font-weight: 600;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #d4a017;
+
+    box-shadow:
+        0 0 0 3px rgba(212, 160, 23, 0.12);
+}
+
+textarea {
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+
+    border: none;
+
+    cursor: pointer;
+
+    padding: 14px;
+
+    background: #0b1f3a;
+
+    color: white;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #d4a017;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    background: #0b1f3a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 70px;
+}
+
+footer p {
+    color: #dce3ed;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+
+        padding: 18px 0;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .about-section {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 35px 25px;
+    }
+
+    .profile-image img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .personal-info {
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .nav-links {
+        gap: 2px;
+    }
+
+    .nav-links a {
+        padding: 8px 9px;
+
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .about-content h1 {
+        font-size: 32px;
+    }
+
+    .about-content h2 {
+        font-size: 18px;
+    }
+
+    .profile-image img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .recipe {
+        padding: 30px 20px;
+    }
+
+    .recipe h1,
+    .menu-section h1,
+    .contact-section h1 {
+        font-size: 32px;
+    }
+
+    form {
+        padding: 25px 20px;
+    }
+
+    section {
+        padding: 50px 15px;
+    }
+}
+```
