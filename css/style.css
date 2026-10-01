@@ -1,0 +1,49 @@
+```css
+/* General page style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+/* Recipe box */
+.recipe {
+    max-width: 700px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Main title */
+h1 {
+    text-align: center;
+    color: #d35400;
+}
+
+/* Section titles */
+h2 {
+    color: #2c3e50;
+    margin-top: 30px;
+}
+
+/* Description */
+.description {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+}
+
+/* List items */
+li {
+    margin-bottom: 10px;
+}
+
+/* Strong text */
+strong {
+    color: #c0392b;
+}
+```
